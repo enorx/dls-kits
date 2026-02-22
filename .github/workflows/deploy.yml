@@ -1,13 +1,8 @@
-name: Build and Deploy
+name: Deploy
 
 on:
   push:
-    branches: [ main ]
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    branches: [main]
 
 jobs:
   build:
@@ -18,23 +13,22 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
-      - run: npm install
-
+      - run: npm ci
       - run: npm run build
-        env:
-          VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
-          VITE_GITHUB_OWNER: ${{ secrets.VITE_GITHUB_OWNER }}
-          VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
-          VITE_GITHUB_BRANCH: ${{ secrets.VITE_GITHUB_BRANCH }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
     steps:
       - uses: actions/deploy-pages@v4
