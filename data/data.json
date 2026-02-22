@@ -1,5 +1,13 @@
 {
-  "leagues": [],
+  "leagues": [
+    {
+      "name": "owl development",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771778657766-development.jpg",
+      "order": 1,
+      "id": "league-1771778665000",
+      "createdAt": "2026-02-22T16:44:25.000Z"
+    }
+  ],
   "clubs": [],
   "kits": [],
   "settings": {
