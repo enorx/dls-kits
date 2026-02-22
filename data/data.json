@@ -2,8 +2,8 @@
   "leagues": [
     {
       "id": "league-123",
-      "name": "Premier League",
-      "logo": "https://...",
+      "name": "owl development",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771777005371-development.jpg",
       "order": 1,
       "createdAt": "2024-01-01T00:00:00Z"
     }
