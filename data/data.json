@@ -1,0 +1,37 @@
+{
+  "leagues": [
+    {
+      "id": "league-123",
+      "name": "Premier League",
+      "logo": "https://...",
+      "order": 1,
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "clubs": [
+    {
+      "id": "club-456",
+      "name": "Manchester United",
+      "logo": "https://...",
+      "leagueId": "league-123",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "kits": [
+    {
+      "id": "kit-789",
+      "name": "Home Kit 2024/25",
+      "type": "Home",
+      "image": "https://...",
+      "link": "https://...",
+      "clubId": "club-456",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "settings": {
+    "appName": "DLS KITS",
+    "appLogo": "/logo.png",
+    "welcomeText": "Welcome...",
+    "version": "1.0.0"
+  }
+}
