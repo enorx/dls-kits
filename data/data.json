@@ -8,8 +8,35 @@
       "createdAt": "2026-02-22T16:44:25.000Z"
     }
   ],
-  "clubs": [],
-  "kits": [],
+  "clubs": [
+    {
+      "name": "Liverpool F.C.",
+      "logo": "https://i.ibb.co/mChbWnPF/Picsart-26-02-22-22-50-08-460.webp",
+      "leagueId": "league-1771778665000",
+      "id": "club-1771793448422",
+      "createdAt": "2026-02-22T20:50:48.422Z"
+    }
+  ],
+  "kits": [
+    {
+      "name": "Liverpool F.C. home 2026",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(1).png",
+      "clubId": "club-1771793448422",
+      "id": "kit-1771793523670",
+      "createdAt": "2026-02-22T20:52:03.671Z"
+    },
+    {
+      "name": "Liverpool F.C. away 2026",
+      "type": "Away",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(2).png",
+      "clubId": "club-1771793448422",
+      "id": "kit-1771793572904",
+      "createdAt": "2026-02-22T20:52:52.904Z"
+    }
+  ],
   "settings": {
     "appName": "DLS KITS",
     "appLogo": "/logo.png",
