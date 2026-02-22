@@ -28,6 +28,13 @@ jobs:
       - name: Build with env
         run: |
           npm run build
+
+          mkdir -p dist/data
+          cp -r data/* dist/data/
+
+          mkdir -p dist/assets/images
+          cp -r assets/images/* dist/assets/images/
+
           cp dist/index.html dist/404.html
         env:
           VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
