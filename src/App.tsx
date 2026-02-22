@@ -38,19 +38,18 @@ function App() {
   const favorites = useFavorites();
   const adminAuth = useAdminAuth();
 
+  // الكشف الجديد باستخدام query params فقط
   useEffect(() => {
-    const hash = window.location.hash;
-    const queryIndex = hash.indexOf('?');
-    const queryString = queryIndex !== -1 ? hash.substring(queryIndex + 1) : '';
-    const urlParams = new URLSearchParams(queryString);
-    const adminKey = urlParams.get('key');
+    const params = new URLSearchParams(window.location.search);
+    const adminFlag = params.get('admin');
+    const adminKey = params.get('key');
 
-    if (hash.includes('/admin')) {
+    if (adminFlag === '1') {
       setIsAdminRoute(true);
       if (adminAuth.validateSecretKey(adminKey)) {
         setCurrentView('admin');
       } else {
-        window.location.hash = '';
+        window.history.replaceState({}, '', '/');
         setIsAdminRoute(false);
         setCurrentView('home');
       }
