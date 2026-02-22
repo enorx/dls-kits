@@ -1,33 +1,15 @@
 {
   "leagues": [
     {
-      "id": "league-123",
       "name": "owl development",
-      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771777005371-development.jpg",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771777506415-development.jpg",
       "order": 1,
-      "createdAt": "2024-01-01T00:00:00Z"
+      "id": "league-1771777510920",
+      "createdAt": "2026-02-22T16:25:10.920Z"
     }
   ],
-  "clubs": [
-    {
-      "id": "club-456",
-      "name": "Manchester United",
-      "logo": "https://...",
-      "leagueId": "league-123",
-      "createdAt": "2024-01-01T00:00:00Z"
-    }
-  ],
-  "kits": [
-    {
-      "id": "kit-789",
-      "name": "Home Kit 2024/25",
-      "type": "Home",
-      "image": "https://...",
-      "link": "https://...",
-      "clubId": "club-456",
-      "createdAt": "2024-01-01T00:00:00Z"
-    }
-  ],
+  "clubs": [],
+  "kits": [],
   "settings": {
     "appName": "DLS KITS",
     "appLogo": "/logo.png",
