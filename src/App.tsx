@@ -46,7 +46,9 @@ function App() {
     const urlParams = new URLSearchParams(window.location.search);
     const adminKey = urlParams.get('key');
     
-    if (window.location.pathname.includes('/admin')) {
+    const path = window.location.pathname.toLowerCase();
+
+    if (path.includes('/admin')) {
       setIsAdminRoute(true);
       if (adminAuth.validateSecretKey(adminKey)) {
         setCurrentView('admin');
