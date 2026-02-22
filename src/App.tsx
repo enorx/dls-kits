@@ -4,6 +4,7 @@ import { useGitHubDataStore } from '@/hooks/useGitHubDataStore';
 import { useFavorites } from '@/hooks/useFavorites';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 
+// Screens
 import { HomeScreen } from '@/screens/HomeScreen';
 import { ClubsScreen } from '@/screens/ClubsScreen';
 import { KitsScreen } from '@/screens/KitsScreen';
@@ -14,9 +15,11 @@ import { AdminDashboard } from '@/screens/AdminDashboard';
 import { AdminLogin } from '@/screens/AdminLogin';
 import { LoadingScreen } from '@/screens/LoadingScreen';
 
+// Components
 import { BottomNav } from '@/components/BottomNav';
 import { Toast } from '@/components/Toast';
 
+// Toast context
 import { createContext, useContext } from 'react';
 
 interface ToastContextType {
@@ -33,22 +36,22 @@ function App() {
   const [selectedClubId, setSelectedClubId] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isAdminRoute, setIsAdminRoute] = useState(false);
-
+  
   const dataStore = useGitHubDataStore();
   const favorites = useFavorites();
   const adminAuth = useAdminAuth();
 
-  // الكشف الجديد باستخدام query params فقط
+  // Check URL for admin access on mount
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const adminFlag = params.get('admin');
-    const adminKey = params.get('key');
-
-    if (adminFlag === '1') {
+    const urlParams = new URLSearchParams(window.location.search);
+    const adminKey = urlParams.get('key');
+    
+    if (window.location.pathname.includes('/admin')) {
       setIsAdminRoute(true);
       if (adminAuth.validateSecretKey(adminKey)) {
         setCurrentView('admin');
       } else {
+        // Invalid key - redirect to home
         window.history.replaceState({}, '', '/');
         setIsAdminRoute(false);
         setCurrentView('home');
@@ -56,11 +59,13 @@ function App() {
     }
   }, [adminAuth]);
 
+  // Show toast helper
   const showToast = (message: string) => {
     setToastMessage(message);
     setTimeout(() => setToastMessage(null), 2500);
   };
 
+  // Navigation handlers
   const navigateToLeague = (leagueId: string) => {
     setSelectedLeagueId(leagueId);
     setCurrentView('clubs');
@@ -87,18 +92,20 @@ function App() {
     }
   };
 
+  // Show loading screen while data is loading
   if (dataStore.isLoading && !isAdminRoute) {
     return <LoadingScreen error={dataStore.loadError} onRetry={dataStore.refreshData} />;
   }
 
+  // Render current screen
   const renderScreen = () => {
     if (isAdminRoute && currentView === 'admin') {
       if (!adminAuth.isAuthenticated) {
         return (
-          <AdminLogin
-            onLogin={adminAuth.login}
+          <AdminLogin 
+            onLogin={adminAuth.login} 
             onCancel={() => {
-              window.location.hash = '';
+              window.history.replaceState({}, '', '/');
               setIsAdminRoute(false);
               setCurrentView('home');
             }}
@@ -106,11 +113,11 @@ function App() {
         );
       }
       return (
-        <AdminDashboard
+        <AdminDashboard 
           dataStore={dataStore}
           onLogout={() => {
             adminAuth.logout();
-            window.location.hash = '';
+            window.history.replaceState({}, '', '/');
             setIsAdminRoute(false);
             setCurrentView('home');
           }}
@@ -121,12 +128,12 @@ function App() {
     switch (currentView) {
       case 'home':
         return (
-          <HomeScreen
+          <HomeScreen 
             leagues={dataStore.data.leagues}
             onLeagueClick={navigateToLeague}
           />
         );
-
+      
       case 'clubs':
         if (!selectedLeagueId) return null;
         const league = dataStore.getLeagueById(selectedLeagueId);
@@ -139,7 +146,7 @@ function App() {
             onBack={navigateBack}
           />
         );
-
+      
       case 'kits':
         if (!selectedClubId) return null;
         const club = dataStore.getClubById(selectedClubId);
@@ -153,7 +160,7 @@ function App() {
             showToast={showToast}
           />
         );
-
+      
       case 'search':
         return (
           <SearchScreen
@@ -166,7 +173,7 @@ function App() {
             showToast={showToast}
           />
         );
-
+      
       case 'favorites':
         return (
           <FavoritesScreen
@@ -176,7 +183,7 @@ function App() {
             showToast={showToast}
           />
         );
-
+      
       case 'profile':
         return (
           <ProfileScreen
@@ -185,7 +192,7 @@ function App() {
             hasWriteAccess={dataStore.hasWriteAccess}
           />
         );
-
+      
       default:
         return null;
     }
@@ -194,17 +201,20 @@ function App() {
   return (
     <ToastContext.Provider value={{ showToast }}>
       <div className="min-h-screen bg-background">
+        {/* Main content */}
         <main className={`${!isAdminRoute ? 'pb-24' : ''} pt-safe min-h-screen`}>
           {renderScreen()}
         </main>
 
+        {/* Bottom Navigation - hidden on admin route */}
         {!isAdminRoute && (
-          <BottomNav
-            currentView={currentView}
+          <BottomNav 
+            currentView={currentView} 
             onNavChange={handleNavChange}
           />
         )}
 
+        {/* Toast notification */}
         {toastMessage && <Toast message={toastMessage} />}
       </div>
     </ToastContext.Provider>
