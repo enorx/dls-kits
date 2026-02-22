@@ -26,7 +26,9 @@ jobs:
         run: npm ci
 
       - name: Build with env
-        run: npm run build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
         env:
           VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
           VITE_GITHUB_OWNER: ${{ vars.VITE_GITHUB_OWNER }}
