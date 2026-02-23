@@ -13,8 +13,8 @@ export function HomeScreen({ leagues, onLeagueClick }: HomeScreenProps) {
   return (
     <div className="min-h-screen">
       <Header 
-        title="DLS KITS" 
-        subtitle="Select a league to browse kits"
+        title="DLS ATEF KITS" 
+        subtitle="Select a league to app kits"
       />
       
       <div className="px-4 py-6">
