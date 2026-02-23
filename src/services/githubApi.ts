@@ -60,7 +60,7 @@ export async function getFileContent(path: string): Promise<{ content: string; s
   
   try {
     const response = await fetch(
-      `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}?ref=${GITHUB_BRANCH}`,
+      `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${GITHUB_BRANCH}`,
       { headers: getHeaders() }
     );
 
@@ -90,19 +90,19 @@ export async function getFileContent(path: string): Promise<{ content: string; s
   }
 }
 
-// Create or update file in repository ← هذه النسخة الوحيدة (محدثة وصحيحة)
+// Create or update file in repository
 export async function commitFile(
   path: string,
   content: string,
   message: string,
   existingSha?: string,
-  isBase64: boolean = false
+  skipBase64Encoding: boolean = false
 ): Promise<{ sha: string; commitSha: string }> {
   validateConfig();
 
   const body: any = {
     message,
-    content: isBase64 ? content : btoa(content),
+    content: skipBase64Encoding ? content : btoa(content),
     branch: GITHUB_BRANCH,
   };
 
@@ -111,7 +111,7 @@ export async function commitFile(
   }
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`,
     {
       method: 'PUT',
       headers: getHeaders(),
@@ -144,7 +144,7 @@ export async function deleteFile(
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`,
     {
       method: 'DELETE',
       headers: getHeaders(),
@@ -171,7 +171,7 @@ export async function getLatestCommitSha(): Promise<string> {
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/refs/heads/ \){GITHUB_BRANCH}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/refs/heads/${GITHUB_BRANCH}`,
     { headers: getHeaders() }
   );
 
@@ -193,7 +193,7 @@ export async function getTreeSha(commitSha: string): Promise<string> {
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/commits/ \){commitSha}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/commits/${commitSha}`,
     { headers: getHeaders() }
   );
 
@@ -225,7 +225,7 @@ export async function createTree(
   }));
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}/git/trees`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/trees`,
     {
       method: 'POST',
       headers: getHeaders(),
@@ -258,7 +258,7 @@ export async function createCommit(
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}/git/commits`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/commits`,
     {
       method: 'POST',
       headers: getHeaders(),
@@ -288,7 +288,7 @@ export async function updateBranch(commitSha: string): Promise<void> {
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/refs/heads/ \){GITHUB_BRANCH}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/refs/heads/${GITHUB_BRANCH}`,
     {
       method: 'PATCH',
       headers: getHeaders(),
@@ -309,7 +309,7 @@ export async function updateBranch(commitSha: string): Promise<void> {
   }
 }
 
-// Upload image as base64 to repository ← الصورة ستكون حقيقية الآن
+// Upload image as base64 to repository
 export async function uploadImage(
   fileName: string,
   base64Content: string,
@@ -319,6 +319,7 @@ export async function uploadImage(
 
   const path = `assets/images/${fileName}`;
   
+  // Check if file already exists
   const existing = await getFileContent(path);
   
   const result = await commitFile(
@@ -326,17 +327,17 @@ export async function uploadImage(
     base64Content,
     message,
     existing?.sha,
-    true   // ← هذا هو الذي يمنع الـ double base64
+    true // skipBase64Encoding = true
   );
 
   return {
     path,
     sha: result.sha,
-    url: `https://raw.githubusercontent.com/\( {GITHUB_OWNER}/ \){GITHUB_REPO}/\( {GITHUB_BRANCH}/ \){path}`,
+    url: `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`,
   };
 }
 
-// باقي الدوال كما هي (بدون أي تغيير)
+// Fetch data.json from repository
 export async function fetchDataFromGitHub(): Promise<DataStore> {
   validateConfig();
 
@@ -354,6 +355,7 @@ export async function fetchDataFromGitHub(): Promise<DataStore> {
   }
 }
 
+// Commit data.json to repository
 export async function commitDataToGitHub(
   data: DataStore,
   message: string
@@ -362,6 +364,7 @@ export async function commitDataToGitHub(
 
   const content = JSON.stringify(data, null, 2);
   
+  // Get existing file SHA if it exists
   const existing = await getFileContent('data/data.json');
   
   return await commitFile(
@@ -372,6 +375,7 @@ export async function commitDataToGitHub(
   );
 }
 
+// Get repository info
 export async function getRepositoryInfo(): Promise<{
   name: string;
   fullName: string;
@@ -381,7 +385,7 @@ export async function getRepositoryInfo(): Promise<{
   validateConfig();
 
   const response = await fetch(
-    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}`,
+    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}`,
     { headers: getHeaders() }
   );
 
@@ -403,12 +407,13 @@ export async function getRepositoryInfo(): Promise<{
   };
 }
 
+// Check if token has write access
 export async function checkWriteAccess(): Promise<boolean> {
   try {
     validateConfig();
     
     const response = await fetch(
-      `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}`,
+      `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}`,
       { headers: getHeaders() }
     );
 
@@ -421,6 +426,7 @@ export async function checkWriteAccess(): Promise<boolean> {
   }
 }
 
+// Export config for use in other modules
 export const githubConfig = {
   token: GITHUB_TOKEN,
   owner: GITHUB_OWNER,
