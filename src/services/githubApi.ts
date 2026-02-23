@@ -309,13 +309,24 @@ export async function updateBranch(commitSha: string): Promise<void> {
   }
 }
 
-// Upload image as base64 to repository
+/**
+ * Upload image to repository
+ * @param fileName - Name of the file (e.g., 'image.png')
+ * @param base64Content - Base64 content of the image (may include data:image prefix)
+ * @param message - Commit message
+ * @returns Object containing path, sha, and raw URL
+ */
 export async function uploadImage(
   fileName: string,
   base64Content: string,
   message: string
 ): Promise<{ path: string; sha: string; url: string }> {
   validateConfig();
+
+  // Clean base64 content: remove data:image/...;base64, prefix if present
+  const cleanBase64 = base64Content.includes(',')
+    ? base64Content.split(',')[1]
+    : base64Content;
 
   const path = `assets/images/${fileName}`;
   
@@ -324,7 +335,7 @@ export async function uploadImage(
   
   const result = await commitFile(
     path,
-    base64Content,
+    cleanBase64,
     message,
     existing?.sha,
     true // skipBase64Encoding = true
