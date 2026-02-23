@@ -60,7 +60,7 @@ export async function getFileContent(path: string): Promise<{ content: string; s
   
   try {
     const response = await fetch(
-      `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${GITHUB_BRANCH}`,
+      `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}?ref=${GITHUB_BRANCH}`,
       { headers: getHeaders() }
     );
 
@@ -95,13 +95,14 @@ export async function commitFile(
   path: string,
   content: string,
   message: string,
-  existingSha?: string
+  existingSha?: string,
+  isBase64: boolean = false
 ): Promise<{ sha: string; commitSha: string }> {
   validateConfig();
 
   const body: any = {
     message,
-    content: btoa(content),
+    content: isBase64 ? content : btoa(content),
     branch: GITHUB_BRANCH,
   };
 
@@ -110,7 +111,7 @@ export async function commitFile(
   }
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}`,
     {
       method: 'PUT',
       headers: getHeaders(),
@@ -143,7 +144,7 @@ export async function deleteFile(
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/contents/ \){path}`,
     {
       method: 'DELETE',
       headers: getHeaders(),
@@ -170,7 +171,7 @@ export async function getLatestCommitSha(): Promise<string> {
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/refs/heads/${GITHUB_BRANCH}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/refs/heads/ \){GITHUB_BRANCH}`,
     { headers: getHeaders() }
   );
 
@@ -192,7 +193,7 @@ export async function getTreeSha(commitSha: string): Promise<string> {
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/commits/${commitSha}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/commits/ \){commitSha}`,
     { headers: getHeaders() }
   );
 
@@ -224,7 +225,7 @@ export async function createTree(
   }));
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/trees`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}/git/trees`,
     {
       method: 'POST',
       headers: getHeaders(),
@@ -257,7 +258,7 @@ export async function createCommit(
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/commits`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}/git/commits`,
     {
       method: 'POST',
       headers: getHeaders(),
@@ -287,7 +288,7 @@ export async function updateBranch(commitSha: string): Promise<void> {
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/git/refs/heads/${GITHUB_BRANCH}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/\( {GITHUB_REPO}/git/refs/heads/ \){GITHUB_BRANCH}`,
     {
       method: 'PATCH',
       headers: getHeaders(),
@@ -325,13 +326,14 @@ export async function uploadImage(
     path,
     base64Content,
     message,
-    existing?.sha
+    existing?.sha,
+    true
   );
 
   return {
     path,
     sha: result.sha,
-    url: `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`,
+    url: `https://raw.githubusercontent.com/\( {GITHUB_OWNER}/ \){GITHUB_REPO}/\( {GITHUB_BRANCH}/ \){path}`,
   };
 }
 
@@ -383,7 +385,7 @@ export async function getRepositoryInfo(): Promise<{
   validateConfig();
 
   const response = await fetch(
-    `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}`,
+    `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}`,
     { headers: getHeaders() }
   );
 
@@ -411,7 +413,7 @@ export async function checkWriteAccess(): Promise<boolean> {
     validateConfig();
     
     const response = await fetch(
-      `${API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}`,
+      `\( {API_BASE}/repos/ \){GITHUB_OWNER}/${GITHUB_REPO}`,
       { headers: getHeaders() }
     );
 
