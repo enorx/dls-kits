@@ -1,6 +1,6 @@
-import type { AppSettings } from '@/types';
+Enterimport type { AppSettings } from '@/types';
 import { Header } from '@/components/Header';
-import { Shield, Info, Mail, ExternalLink, Github, CheckCircle, AlertCircle, XCircle, MessageSquare } from 'lucide-react';
+import { Shield, Info, Mail, ExternalLink, Github, CheckCircle, AlertCircle, XCircle, Send } from 'lucide-react';
 
 interface ProfileScreenProps {
   settings: AppSettings;
@@ -9,10 +9,6 @@ interface ProfileScreenProps {
 }
 
 export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: ProfileScreenProps) {
-  const openTelegramChannel = (url: string) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <div className="min-h-screen">
       <Header title="Profile" />
@@ -24,7 +20,7 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
             <span className="text-4xl font-bold text-white">DLS</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-1">
-            DLS ATEF KITS
+            {settings.appName}
           </h2>
           <p className="text-sm text-muted-foreground">
             Version {settings.version}
@@ -47,7 +43,9 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
             <div className="flex items-center justify-between py-2 border-b border-white/5">
               <span className="text-sm text-muted-foreground">Configuration</span>
               <div className="flex items-center gap-2">
-                {isGitHubConfigured ? (                  <>                    <CheckCircle size={14} className="text-green-500" />
+                {isGitHubConfigured ? (
+                  <>
+                    <CheckCircle size={14} className="text-green-500" />
                     <span className="text-sm text-green-500">Connected</span>
                   </>
                 ) : (
@@ -95,11 +93,13 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Info size={20} className="text-primary" />
               </div>
-              <div>                <h3 className="font-medium text-foreground">About</h3>
-                <p className="text-xs text-muted-foreground">App information</p>              </div>
+              <div>
+                <h3 className="font-medium text-foreground">About</h3>
+                <p className="text-xs text-muted-foreground">App information</p>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              DLS KITS is your ultimate destination for Dream League Soccer kits. 
+              DLS ATEF KITS is your ultimate destination for Dream League Soccer kits. 
               Browse and download kits from top football clubs around the world.
             </p>
           </div>
@@ -134,50 +134,59 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
               </li>
             </ul>
           </div>
-          
+
           {/* Telegram Channels Card */}
           <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
-                <MessageSquare size={20} className="text-primary" />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-[#229ED9]/20 flex items-center justify-center">
+                <Send size={20} className="text-[#229ED9]" />
               </div>
               <div>
                 <h3 className="font-medium text-foreground">Telegram Channels</h3>
-                <p className="text-xs text-muted-foreground">Follow for updates</p>              </div>
+                <p className="text-xs text-muted-foreground">Official channels</p>
+              </div>
             </div>
-            <div className="space-y-3">              <button 
-                onClick={() => openTelegramChannel('https://t.me/+26PeGbvB1OJjZmVk')}
-                className="flex items-center justify-between w-full p-3 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <MessageSquare size={18} className="text-primary" />
-                  <div className="text-left">
-                    <div className="text-sm font-medium text-foreground">ATEF X DLS</div>
-                    <div className="text-xs text-muted-foreground">Presenter Channel</div>
-                  </div>
-                </div>
-                <ExternalLink size={16} />
-              </button>
-              
+            
+            <div className="space-y-3">
+              {/* ATEF X DLS - Presenter Channel */}
               <button 
-                onClick={() => openTelegramChannel('https://t.me/tele_t')}
-                className="flex items-center justify-between w-full p-3 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors"
+                onClick={() => window.open('https://t.me/+26PeGbvB1OJjZmVk', '_blank')}
+                className="w-full flex items-center justify-between p-4 rounded-2xl bg-white/5 hover:bg-white/10 active:bg-white/15 transition-all border border-white/10"
               >
                 <div className="flex items-center gap-3">
-                  <MessageSquare size={18} className="text-primary" />
-                  <div className="text-left">
-                    <div className="text-sm font-medium text-foreground">OWL</div>
-                    <div className="text-xs text-muted-foreground">Developer Channel</div>
+                  <div className="w-9 h-9 rounded-xl bg-[#229ED9] flex items-center justify-center text-white">
+                    <Send size={18} />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">ATEF X DLS</p>
+                    <p className="text-xs text-emerald-400">Presenter’s Channel</p>
                   </div>
                 </div>
-                <ExternalLink size={16} />
+                <ExternalLink size={18} className="text-[#229ED9]" />
+              </button>
+
+              {/* OWL - Developer Channel */}
+              <button 
+                onClick={() => window.open('https://t.me/tele_t', '_blank')}
+                className="w-full flex items-center justify-between p-4 rounded-2xl bg-white/5 hover:bg-white/10 active:bg-white/15 transition-all border border-white/10"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-xl bg-[#229ED9] flex items-center justify-center text-white">
+                    <Send size={18} />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">OWL</p>
+                    <p className="text-xs text-blue-400">App Developer’s Channel</p>
+                  </div>
+                </div>
+                <ExternalLink size={18} className="text-[#229ED9]" />
               </button>
             </div>
           </div>
           
-          {/* Support Card */}
-          <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3 justify-center">
+          {/* Support Card - All texts centered */}
+          <div className="glass-card p-4 text-center">
+            <div className="flex items-center justify-center gap-3 mb-3">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Mail size={20} className="text-primary" />
               </div>
@@ -187,23 +196,25 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
               </div>
             </div>
             <button 
-              onClick={() => openTelegramChannel('https://t.me/+qlBbfv8-9go3NWZk')}
-              className="flex items-center gap-2 text-sm text-primary hover:underline justify-center"
+              onClick={() => window.open('https://t.me/+qlBbfv8-9go3NWZk', '_blank')}
+              className="flex items-center gap-2 mx-auto text-sm text-primary hover:underline"
             >
               Contact Support
-              <ExternalLink size={14} />            </button>
+              <ExternalLink size={14} />
+            </button>
           </div>
         </div>
-                {/* Footer */}
+        
+        {/* Footer */}
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
             Made with ❤️ for DLS players
           </p>
           <p className="text-[10px] text-muted-foreground/60 mt-1">
-            © 2026 DLS KITS. All rights reserved.
+            © 2026 DLS ATEF KITS. All rights reserved.
           </p>
         </div>
       </div>
     </div>
   );
-          }
+      }
