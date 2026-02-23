@@ -24,7 +24,7 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
             <span className="text-4xl font-bold text-white">DLS</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-1">
-            {settings.appName}
+            DLS ATEF KITS
           </h2>
           <p className="text-sm text-muted-foreground">
             Version {settings.version}
@@ -91,8 +91,8 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
         {/* Info Cards */}
         <div className="space-y-3">
           {/* About Card */}
-          <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3">
+          <div className="glass-card p-4 text-center">
+            <div className="flex items-center gap-3 mb-3 justify-center">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Info size={20} className="text-primary" />
               </div>
@@ -107,8 +107,8 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
           </div>
           
           {/* Features Card */}
-          <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3">
+          <div className="glass-card p-4 text-center">
+            <div className="flex items-center gap-3 mb-3 justify-center">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Shield size={20} className="text-primary" />
               </div>
@@ -118,19 +118,19 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
               </div>
             </div>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 Browse kits by league and club
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 One-click link copying
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 Save favorites for quick access
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 justify-center">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 Fast search functionality
               </li>
@@ -138,8 +138,8 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
           </div>
           
           {/* Telegram Channels Card */}
-          <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3">
+          <div className="glass-card p-4 text-center">
+            <div className="flex items-center gap-3 mb-3 justify-center">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <MessageSquare size={20} className="text-primary" />
               </div>
@@ -179,8 +179,8 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
           </div>
           
           {/* Support Card */}
-          <div className="glass-card p-4">
-            <div className="flex items-center gap-3 mb-3">
+          <div className="glass-card p-4 text-center">
+            <div className="flex items-center gap-3 mb-3 justify-center">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Mail size={20} className="text-primary" />
               </div>
@@ -191,7 +191,7 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
             </div>
             <button 
               onClick={() => openTelegramChannel('https://t.me/+qlBbfv8-9go3NWZk')}
-              className="flex items-center gap-2 text-sm text-primary hover:underline"
+              className="flex items-center gap-2 text-sm text-primary hover:underline justify-center"
             >
               Contact Support
               <ExternalLink size={14} />            </button>
@@ -210,4 +210,4 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
       </div>
     </div>
   );
-}
+                }
