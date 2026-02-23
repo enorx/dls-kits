@@ -1,12 +1,10 @@
 import type { AppSettings } from '@/types';
 import { Header } from '@/components/Header';
-import { Shield, Info, Mail, ExternalLink, CheckCircle, AlertCircle, XCircle } from 'lucide-react';
+import { Shield, Info, Mail, ExternalLink } from 'lucide-react';
 import { Send } from 'lucide-react'; // شعار تليجرام
 
 interface ProfileScreenProps {
   settings: AppSettings;
-  isGitHubConfigured: boolean;
-  hasWriteAccess: boolean;
 }
 
 export function ProfileScreen({ settings }: ProfileScreenProps) {
