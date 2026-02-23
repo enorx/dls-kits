@@ -20,7 +20,7 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
             <span className="text-4xl font-bold text-white">DLS</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-1">
-            {settings.appName}
+            DLS ATEF KITS
           </h2>
           <p className="text-sm text-muted-foreground">
             Version {settings.version}
@@ -148,8 +148,8 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
                   <Send size={18} className="text-[#0088cc]" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground">ATEF X DLS</h3>
-                  <p className="text-xs text-muted-foreground">Provider Channel</p>
+                  <h3 className="font-medium text-foreground text-left">ATEF X DLS</h3>
+                  <p className="text-xs text-muted-foreground text-left">Provider Channel</p>
                 </div>
               </a>
               
@@ -165,14 +165,14 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
                   <Send size={18} className="text-[#0088cc]" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground">OWL</h3>
-                  <p className="text-xs text-muted-foreground">App Developer</p>
+                  <h3 className="font-medium text-foreground text-left">OWL</h3>
+                  <p className="text-xs text-muted-foreground text-left">App Developer</p>
                 </div>
               </a>
             </div>
           </div>
           
-          {/* Support Card */}
+          {/* Support Card - Centered Content */}
           <div className="glass-card p-4 flex flex-col items-center text-center">
             <div className="flex flex-col items-center gap-2 mb-3">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
@@ -208,3 +208,4 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
     </div>
   );
 }
+
