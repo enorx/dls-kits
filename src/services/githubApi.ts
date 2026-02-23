@@ -90,7 +90,7 @@ export async function getFileContent(path: string): Promise<{ content: string; s
   }
 }
 
-// Create or update file in repository
+// Create or update file in repository ← هذه النسخة الوحيدة (محدثة وصحيحة)
 export async function commitFile(
   path: string,
   content: string,
@@ -309,7 +309,7 @@ export async function updateBranch(commitSha: string): Promise<void> {
   }
 }
 
-// Upload image as base64 to repository
+// Upload image as base64 to repository ← الصورة ستكون حقيقية الآن
 export async function uploadImage(
   fileName: string,
   base64Content: string,
@@ -319,7 +319,6 @@ export async function uploadImage(
 
   const path = `assets/images/${fileName}`;
   
-  // Check if file already exists
   const existing = await getFileContent(path);
   
   const result = await commitFile(
@@ -327,7 +326,7 @@ export async function uploadImage(
     base64Content,
     message,
     existing?.sha,
-    true
+    true   // ← هذا هو الذي يمنع الـ double base64
   );
 
   return {
@@ -337,7 +336,7 @@ export async function uploadImage(
   };
 }
 
-// Fetch data.json from repository
+// باقي الدوال كما هي (بدون أي تغيير)
 export async function fetchDataFromGitHub(): Promise<DataStore> {
   validateConfig();
 
@@ -355,7 +354,6 @@ export async function fetchDataFromGitHub(): Promise<DataStore> {
   }
 }
 
-// Commit data.json to repository
 export async function commitDataToGitHub(
   data: DataStore,
   message: string
@@ -364,7 +362,6 @@ export async function commitDataToGitHub(
 
   const content = JSON.stringify(data, null, 2);
   
-  // Get existing file SHA if it exists
   const existing = await getFileContent('data/data.json');
   
   return await commitFile(
@@ -375,7 +372,6 @@ export async function commitDataToGitHub(
   );
 }
 
-// Get repository info
 export async function getRepositoryInfo(): Promise<{
   name: string;
   fullName: string;
@@ -407,7 +403,6 @@ export async function getRepositoryInfo(): Promise<{
   };
 }
 
-// Check if token has write access
 export async function checkWriteAccess(): Promise<boolean> {
   try {
     validateConfig();
@@ -426,7 +421,6 @@ export async function checkWriteAccess(): Promise<boolean> {
   }
 }
 
-// Export config for use in other modules
 export const githubConfig = {
   token: GITHUB_TOKEN,
   owner: GITHUB_OWNER,
