@@ -17,7 +17,7 @@ export function ProfileScreen({ settings, isGitHubConfigured, hasWriteAccess }: 
         {/* App Logo & Name */}
         <div className="glass-card p-8 mb-6 text-center">
           <div className="w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center">
-            <span className="text-4xl font-bold text-white">DLS ATEF KITS</span>
+            <span className="text-4xl font-bold text-white">DLS</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-1">
             {settings.appName}
