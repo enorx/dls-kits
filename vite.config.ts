@@ -14,11 +14,13 @@ export default defineConfig({
     sourcemap: false,
     minify: "terser",
     terserOptions: {
+      format: {
+        comments: false
+      },
       compress: {
         drop_console: true,
         drop_debugger: true
-      },
-      mangle: true
+      }
     }
   }
 })
