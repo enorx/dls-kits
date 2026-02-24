@@ -52,7 +52,71 @@
       "createdAt": "2026-02-24T08:59:11.037Z"
     }
   ],
-  "kits": [],
+  "kits": [
+    {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://i.ibb.co/CsQHT9n1/IMG-20260224-110155.webp",
+      "link": "https://i.ibb.co/CsQHT9n1/IMG-20260224-110155.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771923816465",
+      "createdAt": "2026-02-24T09:03:36.465Z"
+    },
+    {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
+      "link": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771923913181",
+      "createdAt": "2026-02-24T09:05:13.182Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
+      "link": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771923992385",
+      "createdAt": "2026-02-24T09:06:32.385Z"
+    },
+    {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://i.ibb.co/Q3qpz17D/IMG-20260224-110728.webp",
+      "link": "https://i.ibb.co/Q3qpz17D/IMG-20260224-110728.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771924088726",
+      "createdAt": "2026-02-24T09:08:08.726Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://i.ibb.co/NgrJGf86/IMG-20260224-110901.webp",
+      "link": "https://i.ibb.co/NgrJGf86/IMG-20260224-110901.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771924185487",
+      "createdAt": "2026-02-24T09:09:45.487Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://i.ibb.co/mFyg7Q3n/IMG-20260224-111041.webp",
+      "link": "https://i.ibb.co/mFyg7Q3n/IMG-20260224-111041.webp",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771924301109",
+      "createdAt": "2026-02-24T09:11:41.109Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
+      "link": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
+      "clubId": "club-1771923551037",
+      "id": "kit-1771924334150",
+      "createdAt": "2026-02-24T09:12:14.150Z"
+    }
+  ],
   "settings": {
     "appName": "DLS KITS",
     "appLogo": "/logo.png",
