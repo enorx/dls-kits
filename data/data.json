@@ -52,6 +52,13 @@
       "createdAt": "2026-02-24T08:59:11.037Z"
     },
     {
+      "name": "Arsenal F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/arsenal/1000000000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1771941606766",
+      "createdAt": "2026-02-24T14:00:06.766Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
