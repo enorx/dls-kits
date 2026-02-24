@@ -86,6 +86,24 @@
       "createdAt": "2026-02-24T12:12:25.052Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(1).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941668397",
+      "createdAt": "2026-02-24T14:01:08.399Z"
+    },
+    {
+      "name": "Away",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(2).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941686473",
+      "createdAt": "2026-02-24T14:01:26.473Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -111,6 +129,15 @@
       "clubId": "club-1771923551037",
       "id": "kit-1771923992385",
       "createdAt": "2026-02-24T09:06:32.385Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(3).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(3).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941717559",
+      "createdAt": "2026-02-24T14:01:57.559Z"
     },
     {
       "name": "GK Home",
@@ -158,6 +185,33 @@
       "createdAt": "2026-02-24T12:14:20.636Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(4).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(4).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941746083",
+      "createdAt": "2026-02-24T14:02:26.083Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(5).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(5).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941777642",
+      "createdAt": "2026-02-24T14:02:57.642Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(6).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Farsenal%2Fbmn%20(6).png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941799898",
+      "createdAt": "2026-02-24T14:03:19.898Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -174,6 +228,15 @@
       "clubId": "club-1771935016761",
       "id": "kit-1771935295777",
       "createdAt": "2026-02-24T12:14:55.777Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/arsenal/1000000000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/arsenal/1000000000.png",
+      "clubId": "club-1771941606766",
+      "id": "kit-1771941822439",
+      "createdAt": "2026-02-24T14:03:42.439Z"
     }
   ],
   "settings": {
