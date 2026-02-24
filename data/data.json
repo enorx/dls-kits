@@ -34,6 +34,13 @@
       "order": 5,
       "id": "league-1771794366478",
       "createdAt": "2026-02-22T21:06:06.478Z"
+    },
+    {
+      "name": "Egyptian Premier League",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771923182201-1000448237.png",
+      "order": 6,
+      "id": "league-1771923105193",
+      "createdAt": "2026-02-24T08:51:45.193Z"
     }
   ],
   "clubs": [],
