@@ -43,7 +43,15 @@
       "createdAt": "2026-02-24T08:51:45.193Z"
     }
   ],
-  "clubs": [],
+  "clubs": [
+    {
+      "name": "Al Ahly FC",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1771923543957-1000448242.png",
+      "leagueId": "league-1771923105193",
+      "id": "club-1771923551037",
+      "createdAt": "2026-02-24T08:59:11.037Z"
+    }
+  ],
   "kits": [],
   "settings": {
     "appName": "DLS KITS",
