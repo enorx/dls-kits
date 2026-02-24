@@ -50,6 +50,13 @@
       "leagueId": "league-1771923105193",
       "id": "club-1771923551037",
       "createdAt": "2026-02-24T08:59:11.037Z"
+    },
+    {
+      "name": "Zamalek SC",
+      "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
+      "leagueId": "league-1771923105193",
+      "id": "club-1771935016761",
+      "createdAt": "2026-02-24T12:10:16.761Z"
     }
   ],
   "kits": [
@@ -63,6 +70,15 @@
       "createdAt": "2026-02-24T09:03:36.465Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://i.ibb.co/wZb8Wqsz/IMG-20260224-141038.webp",
+      "link": "https://i.ibb.co/wZb8Wqsz/IMG-20260224-141038.webp",
+      "clubId": "club-1771935016761",
+      "id": "kit-1771935145052",
+      "createdAt": "2026-02-24T12:12:25.052Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -70,6 +86,15 @@
       "clubId": "club-1771923551037",
       "id": "kit-1771923913181",
       "createdAt": "2026-02-24T09:05:13.182Z"
+    },
+    {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://i.ibb.co/23W7Tktc/IMG-20260224-141052.webp",
+      "link": "https://i.ibb.co/23W7Tktc/IMG-20260224-141052.webp",
+      "clubId": "club-1771935016761",
+      "id": "kit-1771935177836",
+      "createdAt": "2026-02-24T12:12:57.836Z"
     },
     {
       "name": "Third",
@@ -108,6 +133,24 @@
       "createdAt": "2026-02-24T09:11:41.109Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://i.ibb.co/dwNt890j/IMG-20260224-141108.webp",
+      "link": "https://i.ibb.co/dwNt890j/IMG-20260224-141108.webp",
+      "clubId": "club-1771935016761",
+      "id": "kit-1771935209077",
+      "createdAt": "2026-02-24T12:13:29.077Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://i.ibb.co/cSNf84t2/IMG-20260224-141131.webp",
+      "link": "https://i.ibb.co/cSNf84t2/IMG-20260224-141131.webp",
+      "clubId": "club-1771935016761",
+      "id": "kit-1771935260636",
+      "createdAt": "2026-02-24T12:14:20.636Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -115,6 +158,15 @@
       "clubId": "club-1771923551037",
       "id": "kit-1771924334150",
       "createdAt": "2026-02-24T09:12:14.150Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
+      "link": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
+      "clubId": "club-1771935016761",
+      "id": "kit-1771935295777",
+      "createdAt": "2026-02-24T12:14:55.777Z"
     }
   ],
   "settings": {
