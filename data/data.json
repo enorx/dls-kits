@@ -59,6 +59,13 @@
       "createdAt": "2026-02-24T14:00:06.766Z"
     },
     {
+      "name": "Chelsea F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/chelsea/100000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1772053089251",
+      "createdAt": "2026-02-25T20:58:09.251Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
@@ -104,6 +111,15 @@
       "createdAt": "2026-02-24T14:01:26.473Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(1).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053140175",
+      "createdAt": "2026-02-25T20:59:00.175Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -122,6 +138,15 @@
       "createdAt": "2026-02-24T12:12:57.836Z"
     },
     {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(2).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053163858",
+      "createdAt": "2026-02-25T20:59:23.858Z"
+    },
+    {
       "name": "Third",
       "type": "Third",
       "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
@@ -138,6 +163,24 @@
       "clubId": "club-1771941606766",
       "id": "kit-1771941717559",
       "createdAt": "2026-02-24T14:01:57.559Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(3).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(3).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053183537",
+      "createdAt": "2026-02-25T20:59:43.537Z"
+    },
+    {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(4).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(4).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053202139",
+      "createdAt": "2026-02-25T21:00:02.139Z"
     },
     {
       "name": "GK Home",
@@ -212,6 +255,24 @@
       "createdAt": "2026-02-24T14:03:19.898Z"
     },
     {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(5).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(5).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053259736",
+      "createdAt": "2026-02-25T21:00:59.736Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(6).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fchelsea%2Favhhk%20(6).png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053287332",
+      "createdAt": "2026-02-25T21:01:27.332Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -237,6 +298,15 @@
       "clubId": "club-1771941606766",
       "id": "kit-1771941822439",
       "createdAt": "2026-02-24T14:03:42.439Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/chelsea/100000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/chelsea/100000.png",
+      "clubId": "club-1772053089251",
+      "id": "kit-1772053323063",
+      "createdAt": "2026-02-25T21:02:03.063Z"
     }
   ],
   "settings": {
