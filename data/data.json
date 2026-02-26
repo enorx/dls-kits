@@ -66,6 +66,13 @@
       "createdAt": "2026-02-25T20:58:09.251Z"
     },
     {
+      "name": "Liverpool F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/liverpool/10000000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1772140484719",
+      "createdAt": "2026-02-26T21:14:44.720Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
@@ -120,6 +127,15 @@
       "createdAt": "2026-02-25T20:59:00.175Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(1).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140532276",
+      "createdAt": "2026-02-26T21:15:32.276Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -147,6 +163,15 @@
       "createdAt": "2026-02-25T20:59:23.858Z"
     },
     {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(2).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140554405",
+      "createdAt": "2026-02-26T21:15:54.405Z"
+    },
+    {
       "name": "Third",
       "type": "Third",
       "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
@@ -172,6 +197,15 @@
       "clubId": "club-1772053089251",
       "id": "kit-1772053183537",
       "createdAt": "2026-02-25T20:59:43.537Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(3).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(3).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140584031",
+      "createdAt": "2026-02-26T21:16:24.031Z"
     },
     {
       "name": "GK Home",
@@ -273,6 +307,33 @@
       "createdAt": "2026-02-25T21:01:27.332Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(4).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(4).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140612001",
+      "createdAt": "2026-02-26T21:16:52.001Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(5).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(5).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140637800",
+      "createdAt": "2026-02-26T21:17:17.800Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(6).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Fliverpool%2Fsde%20(6).png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140662162",
+      "createdAt": "2026-02-26T21:17:42.162Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -307,6 +368,15 @@
       "clubId": "club-1772053089251",
       "id": "kit-1772053323063",
       "createdAt": "2026-02-25T21:02:03.063Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/liverpool/10000000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/liverpool/10000000.png",
+      "clubId": "club-1772140484719",
+      "id": "kit-1772140685466",
+      "createdAt": "2026-02-26T21:18:05.466Z"
     }
   ],
   "settings": {
