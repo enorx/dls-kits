@@ -80,6 +80,13 @@
       "createdAt": "2026-02-28T13:26:35.636Z"
     },
     {
+      "name": "Manchester United F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/united/100000000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1772321969934",
+      "createdAt": "2026-02-28T23:39:29.934Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
@@ -152,6 +159,15 @@
       "createdAt": "2026-02-28T13:38:54.198Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(1).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772321997889",
+      "createdAt": "2026-02-28T23:39:57.893Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -197,6 +213,15 @@
       "createdAt": "2026-02-28T13:39:17.484Z"
     },
     {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(2).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322016362",
+      "createdAt": "2026-02-28T23:40:16.362Z"
+    },
+    {
       "name": "Third",
       "type": "Third",
       "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
@@ -240,6 +265,15 @@
       "clubId": "club-1772285195636",
       "id": "kit-1772285996634",
       "createdAt": "2026-02-28T13:39:56.634Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(3).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(3).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322033420",
+      "createdAt": "2026-02-28T23:40:33.420Z"
     },
     {
       "name": "GK Home",
@@ -395,6 +429,33 @@
       "createdAt": "2026-02-28T13:41:10.600Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(4).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(4).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322052993",
+      "createdAt": "2026-02-28T23:40:52.993Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(5).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(5).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322071567",
+      "createdAt": "2026-02-28T23:41:11.567Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(6).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Funited%2Frtgik%20(6).png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322090602",
+      "createdAt": "2026-02-28T23:41:30.602Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -447,6 +508,15 @@
       "clubId": "club-1772285195636",
       "id": "kit-1772286098516",
       "createdAt": "2026-02-28T13:41:38.516Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/united/100000000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/united/100000000.png",
+      "clubId": "club-1772321969934",
+      "id": "kit-1772322111961",
+      "createdAt": "2026-02-28T23:41:51.961Z"
     }
   ],
   "settings": {
