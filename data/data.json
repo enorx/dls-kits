@@ -143,6 +143,15 @@
       "createdAt": "2026-02-26T21:15:32.276Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://i.ibb.co/xSXk5Pbt/IMG-20260228-153546.webp",
+      "link": "https://i.ibb.co/xSXk5Pbt/IMG-20260228-153546.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772285934198",
+      "createdAt": "2026-02-28T13:38:54.198Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -179,6 +188,15 @@
       "createdAt": "2026-02-26T21:15:54.405Z"
     },
     {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://i.ibb.co/5WQSxqrr/IMG-20260228-153559.webp",
+      "link": "https://i.ibb.co/5WQSxqrr/IMG-20260228-153559.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772285957484",
+      "createdAt": "2026-02-28T13:39:17.484Z"
+    },
+    {
       "name": "Third",
       "type": "Third",
       "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
@@ -213,6 +231,15 @@
       "clubId": "club-1772140484719",
       "id": "kit-1772140584031",
       "createdAt": "2026-02-26T21:16:24.031Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://i.ibb.co/Cpm7tk0p/IMG-20260228-153616.webp",
+      "link": "https://i.ibb.co/Cpm7tk0p/IMG-20260228-153616.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772285996634",
+      "createdAt": "2026-02-28T13:39:56.634Z"
     },
     {
       "name": "GK Home",
@@ -341,6 +368,33 @@
       "createdAt": "2026-02-26T21:17:42.162Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://i.ibb.co/tMynt2N0/IMG-20260228-153629.webp",
+      "link": "https://i.ibb.co/tMynt2N0/IMG-20260228-153629.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772286029270",
+      "createdAt": "2026-02-28T13:40:29.270Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://i.ibb.co/N6y1nVvb/IMG-20260228-153640.webp",
+      "link": "https://i.ibb.co/N6y1nVvb/IMG-20260228-153640.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772286050876",
+      "createdAt": "2026-02-28T13:40:50.876Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://i.ibb.co/QF0f0VKz/IMG-20260228-153651.webp",
+      "link": "https://i.ibb.co/QF0f0VKz/IMG-20260228-153651.webp",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772286070600",
+      "createdAt": "2026-02-28T13:41:10.600Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -384,6 +438,15 @@
       "clubId": "club-1772140484719",
       "id": "kit-1772140685466",
       "createdAt": "2026-02-26T21:18:05.466Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/city/100000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/city/100000.png",
+      "clubId": "club-1772285195636",
+      "id": "kit-1772286098516",
+      "createdAt": "2026-02-28T13:41:38.516Z"
     }
   ],
   "settings": {
