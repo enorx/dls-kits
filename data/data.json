@@ -73,6 +73,13 @@
       "createdAt": "2026-02-26T21:14:44.720Z"
     },
     {
+      "name": "Manchester City F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/city/100000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1772285195636",
+      "createdAt": "2026-02-28T13:26:35.636Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
