@@ -87,6 +87,13 @@
       "createdAt": "2026-02-28T23:39:29.934Z"
     },
     {
+      "name": "Tottenham Hotspur F.C.",
+      "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/tottenham/1000000.png",
+      "leagueId": "league-1771778665000",
+      "id": "club-1772322704746",
+      "createdAt": "2026-02-28T23:51:44.746Z"
+    },
+    {
       "name": "Zamalek SC",
       "logo": "https://media.publit.io/file/mozapp/dls/teamHD/team-3652.png",
       "leagueId": "league-1771923105193",
@@ -168,6 +175,15 @@
       "createdAt": "2026-02-28T23:39:57.893Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(1).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(1).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322731063",
+      "createdAt": "2026-02-28T23:52:11.063Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -222,6 +238,15 @@
       "createdAt": "2026-02-28T23:40:16.362Z"
     },
     {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(2).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(2).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322749408",
+      "createdAt": "2026-02-28T23:52:29.408Z"
+    },
+    {
       "name": "Third",
       "type": "Third",
       "image": "https://i.ibb.co/DH1CjGDq/IMG-20260224-110552.webp",
@@ -274,6 +299,15 @@
       "clubId": "club-1772321969934",
       "id": "kit-1772322033420",
       "createdAt": "2026-02-28T23:40:33.420Z"
+    },
+    {
+      "name": "Third",
+      "type": "Third",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(3).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(3).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322774142",
+      "createdAt": "2026-02-28T23:52:54.142Z"
     },
     {
       "name": "GK Home",
@@ -456,6 +490,33 @@
       "createdAt": "2026-02-28T23:41:30.602Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(4).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(4).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322792774",
+      "createdAt": "2026-02-28T23:53:12.774Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(5).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(5).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322810227",
+      "createdAt": "2026-02-28T23:53:30.227Z"
+    },
+    {
+      "name": "GK Third",
+      "type": "GK",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(6).png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/25-26/premier%2Ftottenham%2Fxcd%20(6).png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322827501",
+      "createdAt": "2026-02-28T23:53:47.501Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -517,6 +578,15 @@
       "clubId": "club-1772321969934",
       "id": "kit-1772322111961",
       "createdAt": "2026-02-28T23:41:51.961Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/tottenham/1000000.png",
+      "link": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/tottenham/1000000.png",
+      "clubId": "club-1772322704746",
+      "id": "kit-1772322843155",
+      "createdAt": "2026-02-28T23:54:03.155Z"
     }
   ],
   "settings": {
