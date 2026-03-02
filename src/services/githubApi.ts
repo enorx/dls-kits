@@ -11,7 +11,7 @@ const GITHUB_OWNER = import.meta.env.VITE_GITHUB_OWNER || '';
 const GITHUB_REPO = import.meta.env.VITE_GITHUB_REPO || '';
 const GITHUB_BRANCH = import.meta.env.VITE_GITHUB_BRANCH || 'main';
 
-// API Base URL
+// API Base URL.
 const API_BASE = 'https://api.github.com';
 
 // Headers for GitHub API requests
