@@ -41,6 +41,13 @@
       "order": 6,
       "id": "league-1771923105193",
       "createdAt": "2026-02-24T08:51:45.193Z"
+    },
+    {
+      "name": "Classic",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1776182088775-1000483613.png",
+      "order": 7,
+      "id": "league-1776182097055",
+      "createdAt": "2026-04-14T15:54:57.055Z"
     }
   ],
   "clubs": [
