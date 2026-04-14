@@ -80,6 +80,13 @@
       "createdAt": "2026-02-25T20:58:09.251Z"
     },
     {
+      "name": "FC Bayern Munich (2007/08)",
+      "logo": "https://i.ibb.co/39QgKbSL/bayern.webp",
+      "leagueId": "league-1776182097055",
+      "id": "club-1776182174500",
+      "createdAt": "2026-04-14T15:56:14.500Z"
+    },
+    {
       "name": "Liverpool F.C.",
       "logo": "https://devkevpe.nyc3.cdn.digitaloceanspaces.com/DLS/old/premier/liverpool/10000000.png",
       "leagueId": "league-1771778665000",
@@ -207,6 +214,15 @@
       "createdAt": "2026-03-03T12:03:26.118Z"
     },
     {
+      "name": "Home",
+      "type": "Home",
+      "image": "https://i.ibb.co/dsZSVTM7/20260414-173618.webp",
+      "link": "https://i.ibb.co/dsZSVTM7/20260414-173618.webp",
+      "clubId": "club-1776182174500",
+      "id": "kit-1776182208738",
+      "createdAt": "2026-04-14T15:56:48.738Z"
+    },
+    {
       "name": "Away",
       "type": "Away",
       "image": "https://i.ibb.co/3DRXBHQ/IMG-20260224-110418.webp",
@@ -277,6 +293,15 @@
       "clubId": "club-1772539384692",
       "id": "kit-1772539421390",
       "createdAt": "2026-03-03T12:03:41.390Z"
+    },
+    {
+      "name": "Away",
+      "type": "Away",
+      "image": "https://i.ibb.co/MkgHMHYC/20260414-173650.webp",
+      "link": "https://i.ibb.co/MkgHMHYC/20260414-173650.webp",
+      "clubId": "club-1776182174500",
+      "id": "kit-1776182229983",
+      "createdAt": "2026-04-14T15:57:09.983Z"
     },
     {
       "name": "Third",
@@ -585,6 +610,24 @@
       "createdAt": "2026-03-03T12:04:48.782Z"
     },
     {
+      "name": "GK Home",
+      "type": "GK",
+      "image": "https://i.ibb.co/T9RtYN5/20260414-173700.webp",
+      "link": "https://i.ibb.co/T9RtYN5/20260414-173700.webp",
+      "clubId": "club-1776182174500",
+      "id": "kit-1776182258775",
+      "createdAt": "2026-04-14T15:57:38.775Z"
+    },
+    {
+      "name": "GK Away",
+      "type": "GK",
+      "image": "https://i.ibb.co/LXZ3G0B9/20260414-173718.webp",
+      "link": "https://i.ibb.co/LXZ3G0B9/20260414-173718.webp",
+      "clubId": "club-1776182174500",
+      "id": "kit-1776182280280",
+      "createdAt": "2026-04-14T15:58:00.280Z"
+    },
+    {
       "name": "Logo",
       "type": "Logo",
       "image": "https://images2.imgbox.com/fc/75/IUdgERK3_o.png",
@@ -664,6 +707,15 @@
       "clubId": "club-1772539384692",
       "id": "kit-1772539502361",
       "createdAt": "2026-03-03T12:05:02.361Z"
+    },
+    {
+      "name": "Logo",
+      "type": "Logo",
+      "image": "https://i.ibb.co/39QgKbSL/bayern.webp",
+      "link": "https://i.ibb.co/39QgKbSL/bayern.webp",
+      "clubId": "club-1776182174500",
+      "id": "kit-1776182299173",
+      "createdAt": "2026-04-14T15:58:19.173Z"
     }
   ],
   "settings": {
