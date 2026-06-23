@@ -48,6 +48,13 @@
       "order": 7,
       "id": "league-1776182097055",
       "createdAt": "2026-04-14T15:54:57.055Z"
+    },
+    {
+      "name": "FIFA World Cup 2026",
+      "logo": "https://raw.githubusercontent.com/enorx/dls-kits/main/assets/images/1782217736030-1000548173.png",
+      "order": 8,
+      "id": "league-1782217725270",
+      "createdAt": "2026-06-23T12:28:45.270Z"
     }
   ],
   "clubs": [
